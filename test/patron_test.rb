@@ -6,8 +6,8 @@ require 'pry'
 
 class TestPatron < Minitest::Test
   def test_patron_exists
+   binding.pry
     bob = Patron.new("Bob")
-
     assert_instance_of Patron, bob
   end
 

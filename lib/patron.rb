@@ -10,6 +10,10 @@ class Patron
     @bob.name
   end
 
+  def sally_name
+    @sally.name
+  end
+
   def sally_add_interest
 
   end
