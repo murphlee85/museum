@@ -21,11 +21,38 @@ class TestMuseum < Minitest::Test
   def test_that_museum_can_add_exhibit
     dmns = Museum.new("Denver Museum of Nature and Science")
 
-    assert_equal "Dead Sea Scrolls", 10
-    assert_equal "Gems and Minerals", 0
+    assert_equal ("Dead Sea Scrolls", 10), dmns.exhibit
+    assert_equal ("Gems and Minerals", 0), dmns.exhibit
   end
 
-  
+  def test_that_dmns_has_revenue
 
+    dmns = Museum.new("Denver Museum of Nature and Science")
 
+    assert_equal 0, dmns.revenue
+  end
+
+  def test_that_dmns_has_revenue_from_bob_and_sally
+    dmns = Museum.new("Denver Museum of Nature and Science")
+
+    assert_equal 40, dmns.admit.revenue
+  end
+
+  def test_that_patrons_of_exhibit_exists
+    dmns = Museum.new("Denver Museum of Nature and Science")
+
+    assert_equal,
+  end
+
+  def test_that_exhibits_by_attendees
+    dmns = Museum.new("Denver Museum of Nature and Science")
+
+    assert_equal,
+  end
+
+  def test_that_unpopular_exhibits_be_removed
+    dmns = Museum.new("Denver Museum of Nature and Science")
+
+    assert_equal
+  end
 end
